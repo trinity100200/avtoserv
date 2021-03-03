@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.sapteh.Controller.ClientController">
+   <children>
+      <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="600.0">
+         <children>
+            <TabPane prefHeight="482.0" prefWidth="850.0" tabClosingPolicy="UNAVAILABLE">
+              <tabs>
+                <Tab text="Клиент">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="441.0" prefWidth="850.0">
+                           <children>
+                              <TableView fx:id="tableWiewClient" prefHeight="366.0" prefWidth="850.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                <columns>
+                                  <TableColumn fx:id="iD" prefWidth="38.0" text="ID" />
+                                  <TableColumn fx:id="lastName" prefWidth="65.0" text="Фамилия" />
+                                    <TableColumn fx:id="firstName" prefWidth="56.0" text="Имя" />
+                                    <TableColumn fx:id="patronymic" prefWidth="73.0" text="Отчество" />
+                                    <TableColumn fx:id="birthday" prefWidth="101.0" text="Дата рождения" />
+                                    <TableColumn fx:id="registrationDate" prefWidth="114.0" text="Дата регистрации" />
+                                    <TableColumn fx:id="email" minWidth="9.0" prefWidth="98.0" text="Email" />
+                                    <TableColumn fx:id="phone" prefWidth="73.0" text="Телефон" />
+                                    <TableColumn fx:id="genderCode" prefWidth="75.0" text="Пол" />
+                                    <TableColumn fx:id="photoPath" prefWidth="89.0" text="Фото" />
+                                </columns>
+                              </TableView>
+                              <Pagination fx:id="pagination" layoutX="275.0" layoutY="272.0" prefHeight="137.0" prefWidth="200.0" />
+                              <ComboBox fx:id="comboBox" layoutX="125.0" layoutY="366.0" prefWidth="150.0" />
+                              <TextField fx:id="textFieldPoisc" layoutX="475.0" layoutY="371.0" prefHeight="25.0" prefWidth="166.0" />
+                              <Button fx:id="buttonNewClient" layoutX="672.0" layoutY="371.0" mnemonicParsing="false" onAction="#buttonRegCl" text="Добавить" />
+                              <ComboBox fx:id="comboBoxgender" layoutX="8.0" layoutY="371.0" prefHeight="25.0" prefWidth="102.0" />
+                              <Button layoutX="648.0" layoutY="397.0" mnemonicParsing="false" onAction="#savePdf" text="Сохранить в pdf" />
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+                <Tab text="Untitled Tab 2">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                  </content>
+                </Tab>
+              </tabs>
+            </TabPane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

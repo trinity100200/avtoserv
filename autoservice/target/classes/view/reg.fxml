@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="ru.sapteh.Controller.RegClientController">
+   <children>
+      <Label layoutX="96.0" layoutY="18.0" text="Фамилия" />
+      <TextField fx:id="txtLastName" layoutX="235.0" layoutY="14.0" />
+      <TextField fx:id="txtxFirstName" layoutX="235.0" layoutY="48.0" />
+      <TextField fx:id="txtpatronymic" layoutX="235.0" layoutY="91.0" />
+      <TextField fx:id="txtDateReg" layoutX="235.0" layoutY="215.0" />
+      <TextField fx:id="txtEmail" layoutX="235.0" layoutY="175.0" />
+      <TextField fx:id="txtPhotoPath" layoutX="235.0" layoutY="255.0" />
+      <TextField fx:id="txtPhone" layoutX="235.0" layoutY="299.0" />
+      <Label layoutX="98.0" layoutY="52.0" text="Имя" />
+      <Label layoutX="94.0" layoutY="95.0" text="Отчество" />
+      <Label layoutX="94.0" layoutY="136.0" text="Дата рождения" />
+      <Label layoutX="96.0" layoutY="179.0" text="Email" />
+      <Label layoutX="95.0" layoutY="219.0" text="Датарегистрации" />
+      <Label layoutX="89.0" layoutY="259.0" text="Путь к фото" />
+      <Label layoutX="96.0" layoutY="303.0" text="Телефон" />
+      <DatePicker fx:id="dateBirthday" layoutX="223.0" layoutY="132.0" />
+      <Label layoutX="106.0" layoutY="345.0" text="Пол" />
+      <Button fx:id="buttonReg" layoutX="494.0" layoutY="350.0" mnemonicParsing="false" onAction="#buttonAdd" text="регистрация" />
+      <Label fx:id="labelStatus" layoutX="458.0" layoutY="52.0" text="Статус" />
+      <TextField fx:id="genderCode" layoutX="235.0" layoutY="341.0" />
+   </children>
+</AnchorPane>
